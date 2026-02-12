@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart IoT Irrigation System | Team Viridis</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 * {
@@ -23,7 +24,7 @@ body {
 header {
     background: linear-gradient(135deg, #1f7a4d, #14532d);
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -33,7 +34,7 @@ header h1 {
 }
 
 header p {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 1.2rem;
     opacity: 0.9;
 }
@@ -64,7 +65,7 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 .card h3 {
@@ -79,18 +80,19 @@ footer {
     padding: 40px 20px;
 }
 
-button {
+.button {
+    display: inline-block;
     background: #1f7a4d;
     color: white;
     padding: 12px 20px;
-    border: none;
     border-radius: 8px;
-    cursor: pointer;
+    text-decoration: none;
     margin-top: 15px;
     transition: 0.3s;
+    font-weight: 500;
 }
 
-button:hover {
+.button:hover {
     background: #0f5132;
 }
 
@@ -105,6 +107,11 @@ button:hover {
     background: #e6f4ea;
 }
 
+.highlight {
+    font-weight: 600;
+    color: #1f7a4d;
+}
+
 </style>
 </head>
 <body>
@@ -112,15 +119,16 @@ button:hover {
 <header>
     <h1>SMART IoT IRRIGATION SYSTEM</h1>
     <p>Erasmus+ GO GREEN Project | Team Viridis</p>
-    <p>Save Water. Grow Smarter.</p>
-    <button class="hero-button" onclick="scrollToSection('about')">Learn More</button>
+    <p class="highlight">Save Water. Grow Smarter.</p>
+    <a href="#about" class="button hero-button">Explore Project</a>
 </header>
 
 <section id="about">
     <h2 class="section-title">About The Project</h2>
     <p>
-        Agriculture consumes 70% of global freshwater. Climate change and drought increase the urgency for smarter solutions.
-        Our Smart IoT Irrigation System uses real-time sensors and automation to reduce water waste and improve plant growth efficiency.
+        Agriculture consumes 70% of global freshwater. Climate change and drought make efficient water use critical.
+        Our Smart IoT Irrigation System integrates real-time environmental sensing and automation to reduce water waste,
+        improve plant growth, and support sustainable agriculture.
     </p>
 </section>
 
@@ -129,19 +137,19 @@ button:hover {
     <div class="card-container">
         <div class="card">
             <h3>ESP32 Controller</h3>
-            <p>The brain of the system, processing sensor data and controlling irrigation logic.</p>
+            <p>Processes sensor data and controls irrigation logic in real time.</p>
         </div>
         <div class="card">
             <h3>Environmental Sensors</h3>
-            <p>Soil moisture, rain detection, temperature, humidity, and pH monitoring.</p>
+            <p>Soil moisture, rainfall detection, temperature, humidity, and pH monitoring.</p>
         </div>
         <div class="card">
             <h3>Automated Irrigation</h3>
-            <p>Water pump activates only when soil moisture is below threshold and rain is not detected.</p>
+            <p>Water pump activates only when soil is dry and rain is not detected.</p>
         </div>
         <div class="card">
             <h3>IoT Monitoring</h3>
-            <p>Remote monitoring via WiFi & MQTT dashboard for real-time data access.</p>
+            <p>WiFi-based remote monitoring via dashboard and data logging.</p>
         </div>
     </div>
 </section>
@@ -151,42 +159,47 @@ button:hover {
     <div class="card-container">
         <div class="card">
             <h3>Water Efficiency</h3>
-            <p>Prevents over-irrigation and reduces evaporation through underground delivery.</p>
+            <p>Prevents over-irrigation and reduces evaporation losses.</p>
         </div>
         <div class="card">
             <h3>Sustainability</h3>
-            <p>Supports climate-resilient agriculture and smart farming practices.</p>
+            <p>Supports climate-resilient farming and data-driven agriculture.</p>
         </div>
         <div class="card">
-            <h3>Low-Cost & Scalable</h3>
-            <p>Designed using accessible components for practical implementation.</p>
+            <h3>Scalable Design</h3>
+            <p>Low-cost, modular architecture suitable for real-world expansion.</p>
         </div>
     </div>
 </section>
 
 <section>
-    <h2 class="section-title">Dissemination Materials</h2>
+    <h2 class="section-title">Project Materials</h2>
     <div class="card-container">
+
         <div class="card">
             <h3>Brochure</h3>
-            <p>Detailed explanation of our system, features, and impact.</p>
-            <button>Download PDF</button>
+            <p>Complete overview of our system, impact, and innovation.</p>
+            <a href="brochure.png" target="_blank" class="button">View Brochure</a>
         </div>
+
         <div class="card">
             <h3>Poster</h3>
-            <p>Visual presentation of our smart irrigation model.</p>
-            <button>View Poster</button>
+            <p>Visual summary designed for exhibition stand display.</p>
+            <a href="poster.png" target="_blank" class="button">View Poster</a>
         </div>
+
         <div class="card">
-            <h3>Technical Sheet</h3>
-            <p>Full technical specifications and working principle.</p>
-            <button>Download Specs</button>
+            <h3>Technical Documentation</h3>
+            <p>Detailed specifications, working principles, and comparison analysis.</p>
+            <a href="technical_documentation.pdf" target="_blank" class="button">Download PDF</a>
         </div>
+
         <div class="card">
-            <h3>Introduction Video</h3>
-            <p>2–3 minute promotional overview of our system.</p>
-            <button>Watch Video</button>
+            <h3>Team Linktree</h3>
+            <p>Access all our media, updates, and project links.</p>
+            <a href="https://linktr.ee/TeamViridis" target="_blank" class="button">Visit Linktree</a>
         </div>
+
     </div>
 </section>
 
@@ -203,12 +216,6 @@ button:hover {
     <p>© 2026 Team Viridis | Smart IoT Irrigation System</p>
     <p>Water is the future. Innovation protects it.</p>
 </footer>
-
-<script>
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-</script>
 
 </body>
 </html>
