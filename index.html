@@ -1,1 +1,214 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart IoT Irrigation System | Team Viridis</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f9f6;
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1f7a4d, #14532d);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #14532d;
+    font-weight: 600;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1f7a4d;
+}
+
+footer {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+button {
+    background: #1f7a4d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0f5132;
+}
+
+.hero-button {
+    margin-top: 30px;
+    background: white;
+    color: #14532d;
+    font-weight: 600;
+}
+
+.hero-button:hover {
+    background: #e6f4ea;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>SMART IoT IRRIGATION SYSTEM</h1>
+    <p>Erasmus+ GO GREEN Project | Team Viridis</p>
+    <p>Save Water. Grow Smarter.</p>
+    <button class="hero-button" onclick="scrollToSection('about')">Learn More</button>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About The Project</h2>
+    <p>
+        Agriculture consumes 70% of global freshwater. Climate change and drought increase the urgency for smarter solutions.
+        Our Smart IoT Irrigation System uses real-time sensors and automation to reduce water waste and improve plant growth efficiency.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-title">System Architecture</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>ESP32 Controller</h3>
+            <p>The brain of the system, processing sensor data and controlling irrigation logic.</p>
+        </div>
+        <div class="card">
+            <h3>Environmental Sensors</h3>
+            <p>Soil moisture, rain detection, temperature, humidity, and pH monitoring.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Irrigation</h3>
+            <p>Water pump activates only when soil moisture is below threshold and rain is not detected.</p>
+        </div>
+        <div class="card">
+            <h3>IoT Monitoring</h3>
+            <p>Remote monitoring via WiFi & MQTT dashboard for real-time data access.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Innovation & Impact</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Water Efficiency</h3>
+            <p>Prevents over-irrigation and reduces evaporation through underground delivery.</p>
+        </div>
+        <div class="card">
+            <h3>Sustainability</h3>
+            <p>Supports climate-resilient agriculture and smart farming practices.</p>
+        </div>
+        <div class="card">
+            <h3>Low-Cost & Scalable</h3>
+            <p>Designed using accessible components for practical implementation.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Dissemination Materials</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Brochure</h3>
+            <p>Detailed explanation of our system, features, and impact.</p>
+            <button>Download PDF</button>
+        </div>
+        <div class="card">
+            <h3>Poster</h3>
+            <p>Visual presentation of our smart irrigation model.</p>
+            <button>View Poster</button>
+        </div>
+        <div class="card">
+            <h3>Technical Sheet</h3>
+            <p>Full technical specifications and working principle.</p>
+            <button>Download Specs</button>
+        </div>
+        <div class="card">
+            <h3>Introduction Video</h3>
+            <p>2–3 minute promotional overview of our system.</p>
+            <button>Watch Video</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Team Viridis</h2>
+    <p>
+        Eren • Petar • Tia • Zeynep<br>
+        Erasmus+ GO GREEN Project<br>
+        February 2026 – Istanbul
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Team Viridis | Smart IoT Irrigation System</p>
+    <p>Water is the future. Innovation protects it.</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
